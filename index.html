@@ -3,24 +3,46 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<style>
-   P { /* Обычный абзац */ 
-    text-align: justify; /* Выравнивание текста по ширине */
-   } 
-   P.cite { /* Абзац с классом cite */
-    color: navy; /* Цвет текста */
-    margin-left: 20px; /* Отступ слева */
-    border-left: 1px solid navy; /* Граница слева от текста */
-    padding-left: 15px; /* Расстояние от линии до текста */
-   } 
-  </style>
+
 </head>
 <body>
+<div class="wraper">
+<div id= "header">
+	<div id="logo">здесь будет лого</div>
+	<div id="title">здесь будет заголовок</div>
+	</div>
+	<div id="content">
+	<input type="button" id="my button" value="нажми на меня"></
+	input>
+		<div id="nav">здесь разместим меню
+		</div>
+		<div id="article">текст статьи
+		<br>
 	<p>Для искусственного освещения помещения применяются люминесцентные лампы. 
      Они отличаются высокой световой отдачей, продолжительным сроком службы, 
      малой яркостью светящейся поверхности, близким к естественному спектральным 
      составом излучаемого света, что обеспечивает хорошую цветопередачу.</p>
   <p class="cite">Для исключения засветки экрана дисплея световыми потоками 
      оконные проемы снабжены светорассеивающими шторами.</p>
+     
+
+  <script>
+    alert( 'Привет, Мир!' );
+    document.getElementById('nav').innerHTML="этот текст вывел JavaScript"
+    document.getElementById('my button').onclick = function(event) {
+    	alert("ты нажал на кнопку");
+    }
+    function textArticle() {
+    	 document.getElementById(article).innerHTML="этот текст статьи"	
+    }
+
+textArticle();
+
+  </script>
+
+
+
+  <script src='index.js'></script><script>
+
 </body>
 </html>
